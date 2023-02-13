@@ -29,8 +29,8 @@ The function uses recursion to shrink the problem space until it's reduced to a 
 
 ## There are two base cases:
 
-1. If the length of the input string is 0 or 1, it returns True.
-2. If the first and last characters of the input string are different, it returns False.
+1. If the length of the input string is 0 or 1, it returns `True.
+2. If the first and last characters of the input string are different, it returns `False`.
 
 
 The code `if input[0] == input[-1]:` checks if the first character of the input string is the same as the last character. If they are the same, it's possible that the whole string is a palindrome.
