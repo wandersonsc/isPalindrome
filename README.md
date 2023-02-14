@@ -33,9 +33,9 @@ The function uses recursion to shrink the problem space until it's reduced to a 
 2. If the first and last characters of the input string are different, it returns `False`.
 
 
-The code `if input[0] == input[-1]:` checks if the first character of the input string is the same as the last character. If they are the same, it's possible that the whole string is a palindrome.
+The code `if string[0] == string[-1]:` checks if the first character of the input string is the same as the last character. If they are the same, it's possible that the whole string is a palindrome.
 
-The line `return is_palindrome(input[1:-1])` then calls the `is_palindrome` function again, but with a modified input string. The `[1:-1]` part of the code slices the input string to exclude the first and last characters, effectively shrinking the problem space.
+The line `return is_palindrome(string[1:-1])` then calls the `is_palindrome` function again, but with a modified input string. The `[1:-1]` part of the code slices the input string to exclude the first and last characters, effectively shrinking the problem space.
 
 The function will continue to call itself with smaller and smaller input strings until either the length of the string is 0 or 1 (base case 1), or until the first and last characters of the string are different (base case 2).
 
